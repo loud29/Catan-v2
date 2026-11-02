@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: harborlands-eight
+    runtime: node
+    buildCommand: echo Ready
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
